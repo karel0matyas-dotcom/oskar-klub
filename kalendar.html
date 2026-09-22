@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalendář akcí — Oskar Klub</title>
+<meta name="description" content="Program akcí Oskar Klubu — živá hudba, degustace a soukromé večery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><strong>OSKAR</strong> KLUB<span class="brand-sub">&nbsp;· EST. 2014</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Domů</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="kalendar.html" class="active">Kalendář akcí</a>
+      <a href="menu.html">Menu</a>
+      <a href="galerie.html">Fotogalerie</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="rezervace.html" class="nav-cta">Rezervace</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Domů</a> / Kalendář akcí</div>
+    <span class="tag">Co se u nás hraje</span>
+    <h1>Kalendář akcí</h1>
+    <p class="lede">Klikněte na den se zvýrazněnou tečkou pro detail akce. Barevné dny mají obsazenější kapacitu — doporučujeme rezervovat stůl s předstihem.</p>
+  </div>
+</section>
+
+<section style="padding-top:1rem;">
+  <div class="wrap calendar-wrap">
+    <div class="cal-card">
+      <div class="cal-head">
+        <button class="cal-nav" id="calPrev" aria-label="Předchozí měsíc">‹</button>
+        <h3 id="calMonthLabel">—</h3>
+        <button class="cal-nav" id="calNext" aria-label="Další měsíc">›</button>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+      <p class="form-note">Tip: kalendář čte data z proměnné <code>OSKAR_EVENTS</code> ve zdrojovém kódu stránky — snadno ji napojíte na vlastní systém rezervací nebo CMS.</p>
+    </div>
+    <div class="agenda">
+      <h3>Program</h3>
+      <div id="agendaList"><p class="agenda-empty">Načítám akce…</p></div>
+      <a href="rezervace.html" class="btn" style="margin-top:1.2rem;">Rezervovat stůl na akci</a>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="tag">Pravidelný program</span>
+        <h2>Každý týden stejný rytmus</h2>
+      </div>
+    </div>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Čtvrtek — Jazz Night</h3>
+        <p>Komorní jazzové trio od 20:00, vstup volný, doporučená rezervace stolu.</p>
+      </div>
+      <div class="feature">
+        <h3>Pátek — Live & Bar</h3>
+        <p>Hostující kapela od 21:00, koktejlová karta se mění podle sezónního menu.</p>
+      </div>
+      <div class="feature">
+        <h3>Sobota — DJ Set</h3>
+        <p>Rezidentní DJ od 22:00, klub otevřen do 3:00.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:.8rem;"><strong>OSKAR</strong> KLUB</div>
+        <p style="font-size:.92rem;">Bar, kuchyně a živá scéna v srdci města. Otevřeno denně mimo pondělí od 18:00.</p>
+      </div>
+      <div>
+        <h4>Navigace</h4>
+        <ul>
+          <li><a href="o-nas.html">O nás</a></li>
+          <li><a href="kalendar.html">Kalendář akcí</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="galerie.html">Fotogalerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="kontakt.html">Adresa a mapa</a></li>
+          <li><a href="rezervace.html">Rezervace stolu</a></li>
+          <li><a href="mailto:info@oskarklub.cz">info@oskarklub.cz</a></li>
+          <li><a href="tel:+420222123456">+420 222 123 456</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Oskar Klub. Všechna práva vyhrazena.</span>
+      <span>Praha, Česká republika</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sample events — edit dates/titles here or generate them from your booking system.
+  const now = new Date();
+  function d(offsetDays, hh, mm){
+    const dt = new Date(now.getFullYear(), now.getMonth(), now.getDate() + offsetDays, hh, mm);
+    return dt.toISOString();
+  }
+  window.OSKAR_EVENTS = [
+    { date: d(2, 20, 0), time: '20:00', title: 'Jazz Night — Marek Oskar Trio', desc: 'Komorní jazz v hlavním sále, vstup volný.' },
+    { date: d(4, 21, 0), time: '21:00', title: 'Live & Bar — hostující kapela', desc: 'Funková kapela z Brna, koktejlová karta podle sezóny.' },
+    { date: d(6, 22, 0), time: '22:00', title: 'DJ Set — rezidentní DJ', desc: 'Klub otevřen do 3:00, vstup od 22:00.' },
+    { date: d(9, 19, 30), time: '19:30', title: 'Degustační večer', desc: 'Párování vín se sezónním menu, omezená kapacita.' },
+    { date: d(13, 20, 0), time: '20:00', title: 'Jazz Night — kvarteto', desc: 'Hostující kvarteto, doporučená rezervace.' },
+    { date: d(20, 21, 0), time: '21:00', title: 'Soukromá akce — salonek uzavřen', desc: 'Hlavní sál otevřen běžně.' }
+  ];
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

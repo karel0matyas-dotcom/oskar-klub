@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu — Oskar Klub</title>
+<meta name="description" content="Sezónní kuchyně, koktejlová karta a vinný lístek Oskar Klubu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><strong>OSKAR</strong> KLUB<span class="brand-sub">&nbsp;· EST. 2014</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Domů</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="kalendar.html">Kalendář akcí</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="galerie.html">Fotogalerie</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="rezervace.html" class="nav-cta">Rezervace</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Domů</a> / Menu</div>
+    <span class="tag">Sezónní kuchyně &amp; bar</span>
+    <h1>Menu</h1>
+    <p class="lede">Kuchyně servíruje do půlnoci, bar déle. Menu se obměňuje podle sezóny — toto je aktuální výběr.</p>
+  </div>
+</section>
+
+<section style="padding-top:1rem;">
+  <div class="wrap">
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" data-panel="panel-predkrmy">Předkrmy</button>
+      <button class="menu-tab" data-panel="panel-hlavni">Hlavní chody</button>
+      <button class="menu-tab" data-panel="panel-koktejly">Koktejly</button>
+      <button class="menu-tab" data-panel="panel-vina">Víno &amp; nápoje</button>
+      <button class="menu-tab" data-panel="panel-dezerty">Dezerty</button>
+    </div>
+
+    <div class="menu-panel active" id="panel-predkrmy">
+      <div class="menu-list">
+        <div class="menu-item">
+          <span class="name">Tatarák z candáta</span><span class="price">195 Kč</span>
+          <p class="desc">Nakládaný candát, žloutek, kapary, opečený chléb.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Burrata se sezónní zeleninou</span><span class="price">220 Kč</span>
+          <p class="desc">Burrata, grilovaná zelenina, bazalkový olej, pinie.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Carpaccio z hovězí svíčkové</span><span class="price">230 Kč</span>
+          <p class="desc">Parmazán, rukola, hořčičné semínko, olivový olej.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Krémová dýňová polévka</span><span class="price">135 Kč</span>
+          <p class="desc">Pražené dýňové semínko, chilli olej, křupavá cibulka.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-hlavni">
+      <div class="menu-list">
+        <div class="menu-item">
+          <span class="name">Confit kachní stehno</span><span class="price">385 Kč</span>
+          <p class="desc">Pečená celerová pyré, karamelizovaná hruška, jus.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Grilovaný steak z lososa</span><span class="price">365 Kč</span>
+          <p class="desc">Fenyklový salát, citronové beurre blanc, brambory.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Hovězí flank steak</span><span class="price">420 Kč</span>
+          <p class="desc">Chimichurri, pečená zelenina, hranolky s rozmarýnem.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Rizoto s lesními houbami</span><span class="price">295 Kč</span>
+          <p class="desc">Parmazán, lanýžový olej, opečená petrželka.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-koktejly">
+      <div class="menu-list">
+        <div class="menu-item">
+          <span class="name">Oskar Old Fashioned</span><span class="price">240 Kč</span>
+          <p class="desc">Bourbon, vlastní hořká tinktura, pomerančová esence.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Zlatý Negroni</span><span class="price">255 Kč</span>
+          <p class="desc">Gin, campari, vermut, zlatá tinktura, pomerančová kůra.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Klubový Sour</span><span class="price">225 Kč</span>
+          <p class="desc">Whisky, citron, vaječný bílek, andělika.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Bezinkový Spritz</span><span class="price">195 Kč</span>
+          <p class="desc">Prosecco, bezinkový likér, sodovka, máta.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-vina">
+      <div class="menu-list">
+        <div class="menu-item">
+          <span class="name">Ryzlink rýnský, Morava</span><span class="price">115 Kč / 0,1 l</span>
+          <p class="desc">Suché bílé víno, svěží, s výraznou mineralitou.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Frankovka, Morava</span><span class="price">125 Kč / 0,1 l</span>
+          <p class="desc">Suché červené víno zrající v dubových sudech.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Prosecco Extra Dry</span><span class="price">145 Kč / 0,1 l</span>
+          <p class="desc">Jemné perlení, ovocný charakter.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Craft pivo, rotující výčep</span><span class="price">85 Kč / 0,4 l</span>
+          <p class="desc">Vybíráme od menších českých pivovarů, měsíčně obměňujeme.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-dezerty">
+      <div class="menu-list">
+        <div class="menu-item">
+          <span class="name">Čokoládový fondant</span><span class="price">165 Kč</span>
+          <p class="desc">Hořká čokoláda, vanilková zmrzlina, mořská sůl.</p>
+        </div>
+        <div class="menu-item">
+          <span class="name">Citronový tartaletka</span><span class="price">150 Kč</span>
+          <p class="desc">Křupavé těsto, citronový krém, italská pusinka.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="form-note" style="margin-top:2rem;">Ceny jsou uvedeny v Kč včetně DPH. Informace o alergenech na vyžádání u obsluhy.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section style="text-align:center;">
+  <div class="wrap">
+    <span class="tag">Chuť na večeři?</span>
+    <h2 style="max-width:26ch;margin:0 auto .6em;">Rezervujte si stůl a menu si vychutnejte bez čekání.</h2>
+    <a href="rezervace.html" class="btn btn-solid">Rezervovat stůl</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:.8rem;"><strong>OSKAR</strong> KLUB</div>
+        <p style="font-size:.92rem;">Bar, kuchyně a živá scéna v srdci města. Otevřeno denně mimo pondělí od 18:00.</p>
+      </div>
+      <div>
+        <h4>Navigace</h4>
+        <ul>
+          <li><a href="o-nas.html">O nás</a></li>
+          <li><a href="kalendar.html">Kalendář akcí</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="galerie.html">Fotogalerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="kontakt.html">Adresa a mapa</a></li>
+          <li><a href="rezervace.html">Rezervace stolu</a></li>
+          <li><a href="mailto:info@oskarklub.cz">info@oskarklub.cz</a></li>
+          <li><a href="tel:+420222123456">+420 222 123 456</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Oskar Klub. Všechna práva vyhrazena.</span>
+      <span>Praha, Česká republika</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

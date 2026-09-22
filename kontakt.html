@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt — Oskar Klub</title>
+<meta name="description" content="Adresa, otevírací hodiny a kontaktní formulář Oskar Klubu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><strong>OSKAR</strong> KLUB<span class="brand-sub">&nbsp;· EST. 2014</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Domů</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="kalendar.html">Kalendář akcí</a>
+      <a href="menu.html">Menu</a>
+      <a href="galerie.html">Fotogalerie</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
+      <a href="rezervace.html" class="nav-cta">Rezervace</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Domů</a> / Kontakt</div>
+    <span class="tag">Kde nás najdete</span>
+    <h1>Kontakt</h1>
+  </div>
+</section>
+
+<section style="padding-top:1rem;">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="contact-detail" style="border-top:0;">
+        <h3>Adresa</h3>
+        <p>Truhlářská 12<br>110 00 Praha 1<br>Česká republika</p>
+      </div>
+      <div class="contact-detail">
+        <h3>Otevírací hodiny</h3>
+        <p>Út – Čt: 18:00 – 1:00<br>Pá – So: 18:00 – 3:00<br>Ne: 17:00 – 24:00<br>Po: zavřeno</p>
+      </div>
+      <div class="contact-detail">
+        <h3>Spojení</h3>
+        <p><a href="tel:+420222123456">+420 222 123 456</a><br><a href="mailto:info@oskarklub.cz">info@oskarklub.cz</a></p>
+      </div>
+      <div class="contact-detail">
+        <h3>Sociální sítě</h3>
+        <p><a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <div>
+      <iframe class="map-frame" title="Mapa — Oskar Klub" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=14.4230%2C50.0875%2C14.4310%2C50.0915&layer=mapnik&marker=50.0895%2C14.4270">
+      </iframe>
+      <p class="form-note">Vložená mapa zobrazuje orientační polohu — nahraďte souřadnicemi vašeho klubu.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="tag">Napište nám</span>
+        <h2>Dotaz, přání nebo firemní akce?</h2>
+      </div>
+      <p>Rezervaci stolu prosím řešte přes <a href="rezervace.html">rezervační formulář</a> — tady rádi odpovíme na cokoliv dalšího.</p>
+    </div>
+
+    <form id="contactForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="c-name">Jméno a příjmení</label>
+          <input type="text" id="c-name" name="name" autocomplete="name">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="c-email">E-mail</label>
+          <input type="email" id="c-email" name="email" autocomplete="email">
+          <span class="err"></span>
+        </div>
+        <div class="field full">
+          <label for="c-subject">Předmět</label>
+          <input type="text" id="c-subject" name="subject" placeholder="např. dotaz na firemní akci">
+          <span class="err"></span>
+        </div>
+        <div class="field full">
+          <label for="c-message">Zpráva</label>
+          <textarea id="c-message" name="message"></textarea>
+          <span class="err"></span>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-solid" style="margin-top:.6rem;">Odeslat zprávu</button>
+    </form>
+    <div class="form-success"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:.8rem;"><strong>OSKAR</strong> KLUB</div>
+        <p style="font-size:.92rem;">Bar, kuchyně a živá scéna v srdci města. Otevřeno denně mimo pondělí od 18:00.</p>
+      </div>
+      <div>
+        <h4>Navigace</h4>
+        <ul>
+          <li><a href="o-nas.html">O nás</a></li>
+          <li><a href="kalendar.html">Kalendář akcí</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="galerie.html">Fotogalerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="kontakt.html">Adresa a mapa</a></li>
+          <li><a href="rezervace.html">Rezervace stolu</a></li>
+          <li><a href="mailto:info@oskarklub.cz">info@oskarklub.cz</a></li>
+          <li><a href="tel:+420222123456">+420 222 123 456</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Oskar Klub. Všechna práva vyhrazena.</span>
+      <span>Praha, Česká republika</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
